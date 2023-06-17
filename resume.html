@@ -4,23 +4,8 @@ title: Resume
 use-site-title: true
 ---
 
----
-layout: base
----
-
-{% include header.html type="page" %}
-
-<style>
-#pdf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-</style>
-
-<div id="pdf" role="main"></div>
-<script src="/assets/js/pdfobject.min.js"></script>
+<div id="pdf" style="height: 800px;"></div>
+<script src="/js/pdfobject.min.js"></script>
 <script>
-  PDFObject.embed("https://MilkwoodSF.github.io/moneyCreation.pdf", "#pdf");
+PDFObject.embed("https://milkwoodsf.github.io/moneyCreation.pdf", "#pdf");
 </script>
