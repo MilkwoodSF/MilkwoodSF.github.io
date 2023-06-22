@@ -4,8 +4,16 @@ title: Resume
 use-site-title: true
 ---
 
-<div id="pdf" style="height: 1000px;"></div>
+<div id="pdf" style="height: 800px;"></div>
 <script src="/assets/js/pdfobject.min.js"></script>
 <script>
 PDFObject.embed("https://MilkwoodSF.github.io/sheaResume2023.pdf", "#pdf");
 </script>
+
+<style>
+@media only screen and (max-width: 600px) {
+  #pdf {
+    height: 500px;
+  }
+}
+</style>
